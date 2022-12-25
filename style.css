@@ -39,3 +39,18 @@ input
   margin: 4px;
   border-radius: 10px;
 }
+
+
+#message_display_area
+{
+  border-style: solid;
+  width: 30vw;
+  height: 80vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+#divb
+{
+  background-color: white;
+  border-radius: 10px;
+}

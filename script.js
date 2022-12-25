@@ -32,12 +32,37 @@ function send_message()
   db.ref("/quick_chat/"+a+"/"+timestamp).set({mes
   });
   message_val.value = "";
+  // auto scrolling thing
+  var ele = document.getElementById("message_display_area");
+  ele.scrollTop = ele.scrollHeight;
 }
 
 const fetchChat = db.ref("/quick_chat/"+a);
 fetchChat.on("child_added", function (snapshot) {
     const messagesa = snapshot.val();
     var aaa = messagesa.time;
-    var messs = `<ul>${messagesa.mes}</ul>`;
+    var messs = `<div id="divb"><ul><span>${messagesa.mes}</span></ul></div>`;
     document.getElementById("message_display_area").innerHTML += messs;
 });
+
+function test()
+{
+  console.log("works");
+}
+
+
+var input = document.getElementById("message_referance");
+input.addEventListener("keypress", function(event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    document.getElementById("inputbutton").click();
+  }
+});
+
+// setInterval(autoscroll, 1000);
+//
+// function autoscroll()
+// {
+//   var ele = document.getElementById("message_display_area");
+//   ele.scrollTop = ele.scrollHeight;
+// }
