@@ -20,7 +20,7 @@ input[type=text]
 }
 .one
 {
-  position: relative;
+  /* position: relative; */
   flex-direction: column;
   display: flex;
   justify-content: center;
@@ -39,18 +39,47 @@ input
   margin: 4px;
   border-radius: 10px;
 }
-
-
+.forflex
+{
+  display: flex;
+  justify-content: center;
+}
+.for2flex
+{
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+#message_referance
+{
+  width: 450px;
+  height: 20px;
+  background-color: black;
+  border-color: green;
+}
+#inputbutton
+{
+  width: 100px;
+  height: 40px;
+}
 #message_display_area
 {
+  background-color: black;
+  padding: 40px;
   border-style: solid;
-  width: 30vw;
+  width: 500px;
   height: 80vh;
   overflow-y: scroll;
   overflow-x: hidden;
 }
 #divb
 {
-  background-color: white;
-  border-radius: 10px;
+  padding: 10px;
+  font-size: 20px;
+  background-color: grey;
+  color: #17171f;
+  width: auto;
+  border-radius: 5px;
+  margin-bottom: 20px;
 }

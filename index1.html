@@ -3,12 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>hasty-com</title>
-    <link rel="stylesheet" href="style.css"
+    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" media="screen and (min-width: 900px)" href="widescreen.css">
+<link rel="stylesheet" media="screen and (max-width: 600px)" href="smallscreen.css"> -->
   </head>
   <body>
+    <div class="forflex">
     <div id="message_display_area"></div>
+    </div>
+    <div class="for2flex">
     <input id="message_referance">
     <button type="submit" id="inputbutton" onclick="send_message()">submit</button>
+  </div>
+
 
   </body>
   <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
